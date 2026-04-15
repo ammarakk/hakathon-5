@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(PYTHONPATH=/c/Users/User/Documents/hakathon-5 python -m uvicorn api.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(python:*)"
+    ]
+  }
+}

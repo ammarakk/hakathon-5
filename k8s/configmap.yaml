@@ -1,0 +1,13 @@
+# k8s/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nur-scents-config
+  namespace: nur-scents
+data:
+  KAFKA_BOOTSTRAP_SERVERS: "nurscents-kafka:9092"
+  REDIS_URL: "redis://nurscents-redis:6379"
+  DATABASE_URL: "postgresql://nurscents_user:nurscents_pass@nurscents-postgres:5432/nurscents"
+  BUSINESS_NAME: "Nur Scents"
+  GMAIL_POLL_INTERVAL: "30"
+  LOG_LEVEL: "INFO"

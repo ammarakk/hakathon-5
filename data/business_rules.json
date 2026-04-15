@@ -1,0 +1,141 @@
+{
+  "escalation_rules": {
+    "max_ai_replies": 1,
+    "escalate_if_unresolved": true,
+    "urgent_keywords": ["refund", "complaint", "fraud", "cheat", "scam", "police", "legal"],
+    "owner_identification": {
+      "method": "phone_number",
+      "owner_phone": "+92 XXX XXXXXXX",
+      "auto_escalate_owner": true
+    }
+  },
+  "response_rules": {
+    "whatsapp": {
+      "language": "Roman Urdu",
+      "tone": "friendly, informal",
+      "style": "conversational",
+      "max_length": "short_messages",
+      "emojis": true,
+      "greeting": "Assalam o Alaikum! 👋 Nur Scents mein aapka swagat hai.",
+      "closing": "Agar koi sawal ho to zaroor poochein. Allah Hafiz! 🌸"
+    },
+    "email": {
+      "language": "Formal English",
+      "tone": "professional, polite",
+      "style": "structured",
+      "max_length": "detailed",
+      "emojis": false,
+      "greeting": "Dear Customer,",
+      "closing": "Best regards,\nNur Scents Customer Success Team"
+    },
+    "web": {
+      "language": "Mixed (English + Roman Urdu)",
+      "tone": "semi-formal",
+      "style": "helpful",
+      "max_length": "medium",
+      "emojis": true,
+      "greeting": "Hello! Welcome to Nur Scents. How can I help you today?",
+      "closing": "Thank you for choosing Nur Scents! 💐"
+    }
+  },
+  "order_management": {
+    "auto_confirm": false,
+    "payment_confirmation_required": true,
+    "stock_check": true,
+    "low_stock_alert": 10,
+    "out_of_stock_response": "Maafi chahta hun, ye product abhi available nahi hai. Doosra products dekhna chahein?",
+    "delivery_times": {
+      "karachi": "2-3 business days",
+      "other_cities": "3-5 business days"
+    },
+    "order_statuses": ["pending", "confirmed", "processing", "shipped", "delivered", "cancelled"]
+  },
+  "product_recommendations": {
+    "strategy": "preference_based",
+    "factors": ["category", "price_range", "bestseller", "stock_level"],
+    "max_recommendations": 5,
+    "fallback_products": ["NS-003", "NS-010", "NS-006"]
+  },
+  "pricing_rules": {
+    "currency": "PKR",
+    "free_delivery_threshold": 15000,
+    "delivery_charges": {
+      "karachi": 150,
+      "other_cities": 250
+    },
+    "discount_rules": {
+      "bundle_discount": 15,
+      "first_order_discount": 0,
+      "loyalty_discount_threshold": 50000
+    }
+  },
+  "working_hours": {
+    "auto_response_mode": "24/7",
+    "human_handoff_hours": {
+      "start": "10:00",
+      "end": "22:00",
+      "timezone": "Asia/Karachi",
+      "days": ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+    },
+    "outside_hours_message": "Abhi office time nahi hai. Main aapki message note kar raha hun. Kal 10 baje se hum aapse contact karenge. JazakAllah!"
+  },
+  "data_collection": {
+    "required_for_order": ["name", "phone", "address", "city", "products", "payment_method"],
+    "optional_for_order": ["email"],
+    "data_privacy_note": "Aapka data safe hai. Sirf order processing ke liye use hoga."
+  },
+  "return_refund_policy": {
+    "return_window_days": 7,
+    "condition": "unused, sealed packaging",
+    "process": "Contact via WhatsApp with order number",
+    "refund_method": "same as payment",
+    "response": "Returns/Refunds ke liye 7 din mein humse contact karein. Product sealed hona chahiye."
+  },
+  "agent_personality": {
+    "name": "Nur Assistant",
+    "traits": ["helpful", "polite", "patient", "knowledgeable"],
+    "religious_context": "moderate",
+    "religious_context_description": "Islamic greetings, references",
+    "cultural_awareness": "Pakistani",
+    "forbidden_words": ["alcohol", "pig", "haram"],
+    "product_framing": "attar/perfume, not alcohol-based"
+  },
+  "error_handling": {
+    "fallback_responses": [
+      "Maaf kijiye, main samajh nahi paaya. Kya aap thora detail mein bata sakte hain?",
+      "Sorry, I didn't catch that. Could you please rephrase?",
+      "Mushkil ho raha hai samajhna. Doobara try kar sakte hain?"
+    ],
+    "error_retry_limit": 2,
+    "escalate_after_errors": true
+  },
+  "daily_report_schedule": {
+    "time": "09:00",
+    "timezone": "Asia/Karachi",
+    "recipient_email": "ammar@nurscents.pk",
+    "include_metrics": [
+      "total_conversations",
+      "total_orders",
+      "total_revenue",
+      "escalated_incidents",
+      "ai_resolution_rate",
+      "top_selling_products",
+      "common_customer_issues"
+    ]
+  },
+  "kafka_topics": {
+    "whatsapp_events": "whatsapp.events",
+    "email_events": "email.events",
+    "web_events": "web.events",
+    "order_events": "orders.events",
+    "agent_events": "agent.events",
+    "escalation_events": "escalations.events"
+  },
+  "rate_limiting": {
+    "max_messages_per_minute": 10,
+    "max_orders_per_hour": 5,
+    "spam_detection": true,
+    "spam_keywords": ["buy", "order", "fast", "urgent", "click"],
+    "spam_threshold": 5
+  }
+}

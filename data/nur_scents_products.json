@@ -1,0 +1,195 @@
+{
+  "brand": "Nur Scents",
+  "owner": "Ammar",
+  "location": "Karachi, Pakistan",
+  "currency": "PKR",
+  "contact": {
+    "phone": "+92 XXX XXXXXXX",
+    "email": "contact@nurscents.pk",
+    "whatsapp": "+92 XXX XXXXXXX"
+  },
+  "products": [
+    {
+      "id": "NS-001",
+      "name": "Oudh Royale",
+      "category": "Oudh",
+      "description": "Premium quality Oudh with rich, woody notes. Long-lasting fragrance suitable for special occasions.",
+      "price": 12500,
+      "stock": 25,
+      "images": ["oudh_royale_front.jpg", "oudh_royale_side.jpg"],
+      "tags": ["premium", "oudh", "long-lasting", "unisex"],
+      "sizes": ["6ml", "12ml", "24ml"],
+      "bestseller": true
+    },
+    {
+      "id": "NS-002",
+      "name": "Rose of Arabia",
+      "category": "Floral",
+      "description": "Pure Arabian rose essence with delicate floral notes. Elegant and feminine fragrance.",
+      "price": 8500,
+      "stock": 40,
+      "images": ["rose_arabia.jpg"],
+      "tags": ["floral", "rose", "feminine", "elegant"],
+      "sizes": ["6ml", "12ml", "24ml"],
+      "bestseller": false
+    },
+    {
+      "id": "NS-003",
+      "name": "Musk Al Tahara",
+      "category": "Musk",
+      "description": "Pure white musk, clean and refreshing. Perfect for daily wear and prayer times.",
+      "price": 4500,
+      "stock": 100,
+      "images": ["musk_al_tahara.jpg"],
+      "tags": ["musk", "daily", "clean", "unisex"],
+      "sizes": ["6ml", "12ml", "24ml"],
+      "bestseller": true
+    },
+    {
+      "id": "NS-004",
+      "name": "Amber Gold",
+      "category": "Oriental",
+      "description": "Warm amber with vanilla and sandalwood notes. Cozy and sophisticated fragrance.",
+      "price": 9500,
+      "stock": 30,
+      "images": ["amber_gold.jpg"],
+      "tags": ["amber", "warm", "oriental", "unisex"],
+      "sizes": ["6ml", "12ml", "24ml"],
+      "bestseller": false
+    },
+    {
+      "id": "NS-005",
+      "name": "Jasmine Bliss",
+      "category": "Floral",
+      "description": "Fresh jasmine with hints of citrus. Light and uplifting summer fragrance.",
+      "price": 6800,
+      "stock": 55,
+      "images": ["jasmine_bliss.jpg"],
+      "tags": ["floral", "jasmine", "fresh", "summer"],
+      "sizes": ["6ml", "12ml"],
+      "bestseller": false
+    },
+    {
+      "id": "NS-006",
+      "name": "Bakhoor Collection",
+      "category": "Bakhoor",
+      "description": "Traditional Arabic bakhoor chips for burning. Creates authentic Arabian ambiance at home.",
+      "price": 3200,
+      "stock": 80,
+      "images": ["bakhoor_collection.jpg"],
+      "tags": ["bakhoor", "traditional", "home", "arabic"],
+      "sizes": ["50g", "100g"],
+      "bestseller": true
+    },
+    {
+      "id": "NS-007",
+      "name": "Sandalwood Pure",
+      "category": "Woody",
+      "description": "Premium Indian sandalwood oil. Creamy, smooth, and meditative.",
+      "price": 15000,
+      "stock": 15,
+      "images": ["sandalwood_pure.jpg"],
+      "tags": ["sandalwood", "woody", "premium", "meditative"],
+      "sizes": ["6ml", "12ml"],
+      "bestseller": false
+    },
+    {
+      "id": "NS-008",
+      "name": "Dehn Al Oudh Cambodi",
+      "category": "Oudh",
+      "description": "Premium Cambodian Oudh - dark, complex, and intensely aromatic. For the true connoisseur.",
+      "price": 25000,
+      "stock": 10,
+      "images": ["dehn_oudh_cambodi.jpg"],
+      "tags": ["oudh", "premium", "cambodian", "connoisseur"],
+      "sizes": ["3ml", "6ml"],
+      "bestseller": false
+    },
+    {
+      "id": "NS-009",
+      "name": "Lily of the Valley",
+      "category": "Floral",
+      "description": "Delicate white florals with green notes. Soft, feminine, and spring-like.",
+      "price": 5200,
+      "stock": 45,
+      "images": ["lily_valley.jpg"],
+      "tags": ["floral", "lily", "feminine", "spring"],
+      "sizes": ["6ml", "12ml", "24ml"],
+      "bestseller": false
+    },
+    {
+      "id": "NS-010",
+      "name": "Fakhri Al Musk",
+      "category": "Musk",
+      "description": "Signature blend - musk with light floral touches. Our most popular everyday fragrance.",
+      "price": 5500,
+      "stock": 120,
+      "images": ["fakhri_musk.jpg"],
+      "tags": ["musk", "signature", "everyday", "unisex"],
+      "sizes": ["6ml", "12ml", "24ml"],
+      "bestseller": true
+    },
+    {
+      "id": "NS-011",
+      "name": "Saffron & Rose",
+      "category": "Oriental",
+      "description": "Luxurious blend of Kashmiri saffron and Taifi rose. Rich and opulent.",
+      "price": 18000,
+      "stock": 20,
+      "images": ["saffron_rose.jpg"],
+      "tags": ["saffron", "rose", "luxury", "oriental"],
+      "sizes": ["6ml", "12ml"],
+      "bestseller": false
+    },
+    {
+      "id": "NS-012",
+      "name": "Attar Bundle - Starter",
+      "category": "Bundle",
+      "description": "Perfect starter pack: 3 bestselling attars (Musk Al Tahara 6ml, Fakhri Al Musk 6ml, Bakhoor 50g)",
+      "price": 12000,
+      "stock": 35,
+      "images": ["starter_bundle.jpg"],
+      "tags": ["bundle", "starter", "gift", "bestseller"],
+      "sizes": ["bundle"],
+      "bestseller": true,
+      "bundle_items": ["NS-003", "NS-010", "NS-006"],
+      "discount": 15
+    }
+  ],
+  "categories": [
+    {"id": "oudh", "name": "Oudh", "description": "Premium oudh fragrances"},
+    {"id": "floral", "name": "Floral", "description": "Fresh floral scents"},
+    {"id": "musk", "name": "Musk", "description": "Clean musk fragrances"},
+    {"id": "oriental", "name": "Oriental", "description": "Warm oriental blends"},
+    {"id": "woody", "name": "Woody", "description": "Wood-based fragrances"},
+    {"id": "bakhoor", "name": "Bakhoor", "description": "Traditional Arabic bakhoor"},
+    {"id": "bundle", "name": "Bundles", "description": "Curated gift sets"}
+  ],
+  "price_ranges": [
+    {"range": "under_5000", "min": 0, "max": 5000, "label": "Under PKR 5,000"},
+    {"range": "5000_10000", "min": 5000, "max": 10000, "label": "PKR 5,000 - 10,000"},
+    {"range": "10000_20000", "min": 10000, "max": 20000, "label": "PKR 10,000 - 20,000"},
+    {"range": "above_20000", "min": 20000, "max": 999999, "label": "Above PKR 20,000"}
+  ],
+  "business_hours": {
+    "weekdays": "10:00 AM - 10:00 PM",
+    "weekends": "11:00 AM - 9:00 PM",
+    "timezone": "Asia/Karachi"
+  },
+  "delivery_info": {
+    "areas": ["Karachi", "Lahore", "Islamabad", "Rawalpindi"],
+    "karachi_delivery": "2-3 business days",
+    "other_cities": "3-5 business days",
+    "charges": {
+      "karachi": 150,
+      "other_cities": 250
+    },
+    "free_delivery_above": 15000
+  },
+  "payment_methods": ["Cash on Delivery", "Bank Transfer", "EasyPaisa", "JazzCash"],
+  "social_media": {
+    "instagram": "nurscents.pk",
+    "facebook": "nurscents.pk",
+    "whatsapp": "+92 XXX XXXXXXX"
+  }
+}

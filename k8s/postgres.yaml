@@ -1,0 +1,57 @@
+# k8s/postgres.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nurscents-postgres
+  namespace: nur-scents
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nurscents-postgres
+  template:
+    metadata:
+      labels:
+        app: nurscents-postgres
+    spec:
+      containers:
+      - name: postgres
+        image: ankane/pgvector:latest
+        env:
+        - name: POSTGRES_DB
+          value: nurscents
+        - name: POSTGRES_USER
+          value: nurscents_user
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: nur-scents-secrets
+              key: POSTGRES_PASSWORD
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+        - name: postgres-data
+          mountPath: /var/lib/postgresql/data
+        readinessProbe:
+          exec:
+            command:
+            - pg_isready
+            - -U
+            - nurscents_user
+          initialDelaySeconds: 10
+          periodSeconds: 5
+      volumes:
+      - name: postgres-data
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nurscents-postgres
+  namespace: nur-scents
+spec:
+  selector:
+    app: nurscents-postgres
+  ports:
+  - port: 5432
+    targetPort: 5432

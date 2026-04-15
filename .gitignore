@@ -1,0 +1,129 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+venv/
+ENV/
+env/
+.venv
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.next/
+out/
+.next
+turbo
+.vercel
+*.tsbuildinfo
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+*.cover
+.hypothesis/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Kafka
+kafka-data/
+zookeeper-data/
+postgres_data/
+kafka_data/
+
+# k3d/k8s secrets
+kubeconfig
+k8s/secrets.yaml
+
+# Test artifacts
+load_test_report.html
+load_test_results*
+debug/__pycache__/
+
+# PM2
+.pm2/
+
+# Docker
+docker-compose.override.yml
+
+# Credentials
+credentials.json
+token.json
+*.pem
+*.key
+*.cert
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# PostgreSQL
+*.dump
+
+# PgAdmin
+pgadmin_data/
+
+# Application specific
+uploads/
+media/
+staticfiles/

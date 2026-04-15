@@ -1,0 +1,14 @@
+# k8s/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nur-scents-api-service
+  namespace: nur-scents
+spec:
+  selector:
+    app: nur-scents-api
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8000
+  type: ClusterIP
